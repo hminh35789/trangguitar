@@ -1,0 +1,18 @@
+We have a great selection of musical instruments including guitars, basses, and<br> drums. And we're constanly adding more to give you the best selection possible!
+<header>Featured products</header>
+<div *ngFor="let p of products" class="container">
+    <div class="row">
+    <div class="col-3">
+        <img src="{{p.image}}"style="with:100px;height:100px;">
+       
+    </div>
+    <div class="col-6">
+       <a [routerLink]="['/products',p.id]">{{p.productname}}</a> <br>
+       <strong>Your price</strong>{{p.price}}
+       <p>{{p.description}}</p>
+        
+      
+    </div>
+    </div>
+   
+</div>

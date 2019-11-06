@@ -1,0 +1,25 @@
+.container{
+    background-color:white;
+    border-radius: 5px;
+
+}
+header{
+    border-bottom: 2px solid rgba(212, 55, 191, 0.411);
+    padding: 20px;
+    margin-bottom: 15px;
+}
+aside{
+    float: left;
+    width: 30%;
+}
+aside>.title
+{
+    color:rgb(173, 128, 14);
+}
+
+footer{
+   text-align: right;
+   border-right: 20px;
+   border-top: 2px solid rgba(212, 55, 191, 0.411);
+    
+}
