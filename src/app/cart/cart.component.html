@@ -1,13 +1,13 @@
 <a [routerLink]="['']" routerLinkActive="router-link-active" >Back</a>
 <h3>Cart</h3><button class="nut" (click)="clearCart()">clear</button>
 
-<div style="text-align: right" class="text" let con=con> Pick a currency<select [(ngModel)]="tiente.tt"(press)="tien()">
-    <option value="USD">USD</option>
+<div style="text-align: right;color: lightpink" class="text" > Pick a currency<select class="khung" [(ngModel)]="tiente.tt"[ngModelOptions]="{standalone: true}"(press)="tien()">
+    <option style="color: violet" value="USD">USD</option>
     <option value="VND">VND</option>
     <option value="GBP">GBP</option>
     <option value="EUR">EUR</option>
     </select>
-    <div class="alert alert-primary" role="alert"[(ngModel)]="tiente.thongbao">
+    <div style="color: violet;text-align: left" class="thong bao" [(ngModel)]="tiente.thongbao"[ngModelOptions]="{standalone: true}">
       {{tien()}}
     </div>
 

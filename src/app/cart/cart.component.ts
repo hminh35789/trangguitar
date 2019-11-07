@@ -8,9 +8,9 @@ import { VirtualTimeScheduler } from 'rxjs';
 })
 export class CartComponent implements OnInit {
   items;
-  tiente={tt:null,thongbao:null}
+  tiente={tt:"USD",thongbao:null}
   soluong=[];
-
+  
   constructor(  private cartService: CartService) { }
 
   ngOnInit() {
@@ -25,12 +25,15 @@ total(index){
   return this.items[index].price*this.soluong[index];
 }
 tien(){
-  if (this.tiente.tt=="USD") {
-    this.tiente.thongbao="dang chon usd"
+  if (this.tiente.tt==="USD") {
+    this.tiente.thongbao=""
+   
   }
   else{
-    this.tiente.thongbao="khong ho tro"
+    this.tiente.thongbao="Bank of America account holders can exchange foreign currency (no coins) for U.S. dollars at a full-service banking center. Add a currency to view the currency exchange rates for that country and find out how much your foreign currency is currently worth in U.S. dollars."
+    
+   
   }
-  
+    return this.tiente.thongbao;
 }
 }
